@@ -10,4 +10,14 @@
 
 @interface BaseCell : UITableViewCell
 
++(UINib *)nib;
+
++(id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style cellID:(NSString *)cellID;
++(id)cellForTableView:(UITableView *)tableView withStyle:(UITableViewCellStyle)style;
++(id) cellForTableView:(UITableView *)tableView fromNib:(UINib *)nib;
+
++(NSString *)cellIdentifier;
+
+-(void)reset;
+
 @end
