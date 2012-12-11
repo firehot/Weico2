@@ -11,10 +11,12 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize revealSlideViewController = _revealSlideViewController;
 
 - (void)dealloc
 {
     [_window release];
+    [_revealSlideViewController release];
     [super dealloc];
 }
 
@@ -23,6 +25,31 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    RootViewController * rvc = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
+    UINavigationController * nav1 = [[[UINavigationController alloc] initWithRootViewController:rvc] autorelease];
+    
+    NotificationViewController * nvc = [[[NotificationViewController alloc] initWithNibName:@"NotificationViewController" bundle:nil] autorelease];
+    UINavigationController * nav2 = [[[UINavigationController alloc] initWithRootViewController:nvc] autorelease];
+    
+    TrendsViewController * tvc = [[[TrendsViewController alloc] initWithNibName:@"TrendsViewController" bundle:nil] autorelease];
+    UINavigationController * nav3 = [[[UINavigationController alloc] initWithRootViewController:tvc] autorelease];
+    
+    ProfileViewController * pvc = [[[ProfileViewController alloc] initWithNibName:@"ProfileViewController" bundle:nil] autorelease];
+    UINavigationController * nav4 = [[[UINavigationController alloc] initWithRootViewController:pvc] autorelease];
+    
+    SettingsViewController * svc = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
+    UINavigationController * nav5 = [[[UINavigationController alloc] initWithRootViewController:svc] autorelease];
+    
+    NSArray * array = [[[NSArray alloc] initWithObjects:nav1, nav2, nav3, nav4, nav5, nil] autorelease];
+    
+    UITabBarController * tabBarController = [[[UITabBarController alloc] init] autorelease];
+    tabBarController.viewControllers = array;
+    
+    self.revealSlideViewController = [[PPRevealSideViewController alloc] initWithRootViewController:tabBarController];
+    
+    self.window.rootViewController = _revealSlideViewController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

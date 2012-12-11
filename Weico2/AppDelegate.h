@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoginViewControllers.h"
+#import "RootViewController.h"
+#import "NotificationViewController.h"
+#import "TrendsViewController.h"
+#import "ProfileViewController.h"
+#import "SettingsViewController.h"
+#import "PPRevealSideViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, PPRevealSideViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) PPRevealSideViewController * revealSlideViewController;
 
 @end
