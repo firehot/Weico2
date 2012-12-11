@@ -1,9 +1,9 @@
 //
 //  NSDictionaryAdditions.h
-//  WeiboPad
+//  Weico2
 //
-//  Created by junmin liu on 10-10-6.
-//  Copyright 2010 Openlab. All rights reserved.
+//  Created by qianfeng on 12-12-11.
+//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

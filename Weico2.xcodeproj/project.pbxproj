@@ -67,6 +67,7 @@
 		BC5C9BE31676D0FF00D46F79 /* StatusBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5C9BE11676D0FF00D46F79 /* StatusBaseViewController.xib */; };
 		BC5C9BE71676D17F00D46F79 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C9BE61676D17F00D46F79 /* Status.m */; };
 		BC5C9BEA1676D19100D46F79 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C9BE91676D19100D46F79 /* User.m */; };
+		BC5C9BEE16770E7500D46F79 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C9BED16770E7500D46F79 /* BaseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +175,8 @@
 		BC5C9BE61676D17F00D46F79 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
 		BC5C9BE81676D19100D46F79 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		BC5C9BE91676D19100D46F79 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BC5C9BEC16770E7500D46F79 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		BC5C9BED16770E7500D46F79 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,7 @@
 		BC5C9B261676C0AF00D46F79 = {
 			isa = PBXGroup;
 			children = (
+				BC5C9BEB16770E1D00D46F79 /* TableCells */,
 				BC5C9BAA1676C6E000D46F79 /* PullToRefresh */,
 				BC5C9B6E1676C65900D46F79 /* WeiboEngine */,
 				BC5C9B4D1676C55300D46F79 /* NetWork */,
@@ -423,6 +427,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		BC5C9BEB16770E1D00D46F79 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				BC5C9BEC16770E7500D46F79 /* BaseCell.h */,
+				BC5C9BED16770E7500D46F79 /* BaseCell.m */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -531,6 +544,7 @@
 				BC5C9BE21676D0FF00D46F79 /* StatusBaseViewController.m in Sources */,
 				BC5C9BE71676D17F00D46F79 /* Status.m in Sources */,
 				BC5C9BEA1676D19100D46F79 /* User.m in Sources */,
+				BC5C9BEE16770E7500D46F79 /* BaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
