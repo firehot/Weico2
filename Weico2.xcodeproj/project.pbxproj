@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC10AD0F1678537400C44077 /* StatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC10AD0E1678537400C44077 /* StatusCell.m */; };
+		BC10AD161678557000C44077 /* StatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC10AD151678557000C44077 /* StatusCell.xib */; };
 		BC5C9B361676C0B000D46F79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5C9B351676C0B000D46F79 /* UIKit.framework */; };
 		BC5C9B381676C0B000D46F79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5C9B371676C0B000D46F79 /* Foundation.framework */; };
 		BC5C9B3A1676C0B000D46F79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5C9B391676C0B000D46F79 /* CoreGraphics.framework */; };
@@ -71,6 +73,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC10AD0D1678537400C44077 /* StatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusCell.h; sourceTree = "<group>"; };
+		BC10AD0E1678537400C44077 /* StatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusCell.m; sourceTree = "<group>"; };
+		BC10AD151678557000C44077 /* StatusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusCell.xib; sourceTree = "<group>"; };
 		BC5C9B311676C0B000D46F79 /* Weico2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weico2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5C9B351676C0B000D46F79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BC5C9B371676C0B000D46F79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -432,6 +437,9 @@
 			children = (
 				BC5C9BEC16770E7500D46F79 /* BaseCell.h */,
 				BC5C9BED16770E7500D46F79 /* BaseCell.m */,
+				BC10AD0D1678537400C44077 /* StatusCell.h */,
+				BC10AD0E1678537400C44077 /* StatusCell.m */,
+				BC10AD151678557000C44077 /* StatusCell.xib */,
 			);
 			name = TableCells;
 			sourceTree = "<group>";
@@ -497,6 +505,7 @@
 				BC5C9BD81676CB9A00D46F79 /* ProfileViewController.xib in Resources */,
 				BC5C9BDD1676CBD500D46F79 /* SettingsViewController.xib in Resources */,
 				BC5C9BE31676D0FF00D46F79 /* StatusBaseViewController.xib in Resources */,
+				BC10AD161678557000C44077 /* StatusCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +554,7 @@
 				BC5C9BE71676D17F00D46F79 /* Status.m in Sources */,
 				BC5C9BEA1676D19100D46F79 /* User.m in Sources */,
 				BC5C9BEE16770E7500D46F79 /* BaseCell.m in Sources */,
+				BC10AD0F1678537400C44077 /* StatusCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +656,7 @@
 				BC5C9B4B1676C0B000D46F79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
